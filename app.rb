@@ -25,8 +25,8 @@ class Minuto < Sinatra::Base
     erb params[:page].to_sym
   end
 
-  get '/:dir/:name' do
-    erb "/#{params[:dir]}/#{params[:name]}".to_sym
+  get '/:dir/:page' do
+    erb "/#{params[:dir]}/#{params[:page]}".to_sym
   end
 
 end

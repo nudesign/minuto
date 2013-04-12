@@ -25,6 +25,9 @@ a:active {
   color: #BBB;
   text-decoration: none;
 }
+a.active {
+  color: #740F0D;
+}
 
 h1, h2, h3 {
   @include text;
@@ -142,7 +145,7 @@ p + p {
     padding-top: 0px;
   }
   .list-item-txt {
-    
+
   }
 }
 
@@ -195,7 +198,7 @@ p + p {
     height: 48px;
   }
   &.pw-absolute {
-    
+
   }
 }
 .paginator {
