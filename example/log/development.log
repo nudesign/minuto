@@ -1,0 +1,2389 @@
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=admin command=[34m{:ismaster=>1} [0m([32m3.0160ms[0m)
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 09:22:46 -0300
+Processing by HomeController#index as HTML
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=pages selector=[34m{"$query"=>{"type"=>:creators}, "$orderby"=>{:_id=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m6.9180ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=pages selector=[34m{"$query"=>{"type"=>:inspirations}, "$orderby"=>{:_id=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m1.7760ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"art"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m7.6859ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"architecture"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.3601ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"design"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.1749ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"photography"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m1.7128ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"fashion"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.1298ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "_id"=>{"$nin"=>["512d0958caebf30c770000dd", "512cfceecaebf30c7700009e", "51491064caebf30c7700032b", "51475deccaebf30c7700026d"]}}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil ([32m7.1671ms[0m)
+  Rendered shared/_page_title.html.erb (2.6ms)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512d0958caebf30c770000dd"}} [0m([32m7.3678ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d0958caebf30c770000dd"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.3290ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d0958caebf30c770000dd"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.2401ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512cfceecaebf30c7700009e"}} [0m([32m2.6081ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512cfceecaebf30c7700009e"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.2132ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512cfceecaebf30c7700009e"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.7842ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"51491064caebf30c7700032b"}} [0m([32m2.5771ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51491064caebf30c7700032b"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.8501ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51491064caebf30c7700032b"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.0611ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"51475deccaebf30c7700026d"}} [0m([32m2.3940ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51475deccaebf30c7700026d"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.6480ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51475deccaebf30c7700026d"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.5021ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"514775dbcaebf30c77000290"}} [0m([32m2.9509ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"514775dbcaebf30c77000290"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.3863ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"514775dbcaebf30c77000290"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.5050ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"5147597ecaebf30c7700025e"}} [0m([32m2.7168ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"5147597ecaebf30c7700025e"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.5381ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"5147597ecaebf30c7700025e"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.8230ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512e7584caebf30c77000112"}} [0m([32m2.4431ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512e7584caebf30c77000112"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.7372ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512e7584caebf30c77000112"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.8319ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512d1fbccaebf30c77000103"}} [0m([32m2.5299ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d1fbccaebf30c77000103"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.2771ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d1fbccaebf30c77000103"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.2320ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"51252022caebf3fc1300001b"}} [0m([32m2.5337ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51252022caebf3fc1300001b"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m6.5141ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51252022caebf3fc1300001b"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m5.3532ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512d1908caebf30c770000e9"}} [0m([32m2.4011ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d1908caebf30c770000e9"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.0968ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d1908caebf30c770000e9"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.2582ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"5137a096caebf30c77000127"}} [0m([32m2.5132ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"5137a096caebf30c77000127"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.9690ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"5137a096caebf30c77000127"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.5903ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"513e35d2caebf30c77000135"}} [0m([32m2.6319ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"513e35d2caebf30c77000135"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.6778ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"513e35d2caebf30c77000135"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.5930ms[0m)
+  Rendered creators/_creators_list.html.erb (21120.4ms)
+  Rendered creators/_creator_preview.html.erb (1.8ms)
+  Rendered shared/_page_title.html.erb (0.9ms)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=inspirations selector=[34m{"$query"=>{"published"=>true, "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=2 skip=0 batch_size=nil fields=nil ([32m7.6091ms[0m)
+  Rendered inspirations/_list.html.erb (19.6ms)
+  Rendered home/index.html.erb within layouts/application (21194.4ms)
+Compiled hugrid.css  (0ms)  (pid 1081)
+Compiled bootstrap_forms.css  (0ms)  (pid 1081)
+Compiled bootstrap_buttons.css  (0ms)  (pid 1081)
+Compiled application.css  (3220ms)  (pid 1081)
+  Rendered shared/_header.html.erb (1.8ms)
+Compiled jquery.js  (4ms)  (pid 1081)
+Compiled jquery-ui.js  (123ms)  (pid 1081)
+Compiled jquery_ujs.js  (1ms)  (pid 1081)
+Compiled dispatcher.js  (0ms)  (pid 1081)
+Compiled hugrid.js  (0ms)  (pid 1081)
+Compiled jquery-gallerize.js  (1ms)  (pid 1081)
+Compiled modernizr.js  (1ms)  (pid 1081)
+Compiled plupload.js  (0ms)  (pid 1081)
+Compiled plupload/i18n/pt-br.js  (0ms)  (pid 1081)
+Compiled plupload.settings.js  (3ms)  (pid 1081)
+Compiled jquery.plupload.queue.js  (0ms)  (pid 1081)
+Compiled plupload.flash.js  (0ms)  (pid 1081)
+Compiled plupload.html4.js  (0ms)  (pid 1081)
+Compiled plupload.html5.js  (1ms)  (pid 1081)
+Compiled plupload.gears.js  (0ms)  (pid 1081)
+Compiled plupload_it.js  (958ms)  (pid 1081)
+Compiled addThis_config.js  (0ms)  (pid 1081)
+Compiled categories.js  (0ms)  (pid 1081)
+Compiled creators.js  (0ms)  (pid 1081)
+Compiled exists.js  (0ms)  (pid 1081)
+Compiled helpers.js  (0ms)  (pid 1081)
+Compiled home.js  (0ms)  (pid 1081)
+Compiled inspirations.js  (0ms)  (pid 1081)
+Compiled steppable_form.js  (0ms)  (pid 1081)
+Compiled application.js  (2552ms)  (pid 1081)
+  Rendered application/_grid.html.erb (0.8ms)
+Completed 200 OK in 27968ms (Views: 27579.9ms)
+
+Served asset /plupload.settings.js - 304 Not Modified (6ms)
+
+Served asset /jquery_ujs.js - 304 Not Modified (8ms)
+
+Served asset /dispatcher.js - 304 Not Modified (5ms)
+
+Served asset /application.css - 200 OK (8ms)
+
+Served asset /home.js - 200 OK (5ms)
+
+Served asset /jquery-gallerize.js - 304 Not Modified (5ms)
+
+Served asset /modernizr.js - 304 Not Modified (8ms)
+
+Served asset /plupload.js - 304 Not Modified (7ms)
+
+Served asset /jquery-ui.js - 304 Not Modified (9ms)
+
+Served asset /jquery.js - 304 Not Modified (145ms)
+
+Served asset /plupload.html5.js - 304 Not Modified (8ms)
+
+Served asset /creators.js - 200 OK (4ms)
+
+Served asset /plupload.flash.js - 304 Not Modified (11ms)
+
+Served asset /plupload.html4.js - 304 Not Modified (14ms)
+
+Served asset /application.js - 200 OK (84ms)
+
+Served asset /addThis_config.js - 200 OK (3ms)
+
+Served asset /helpers.js - 200 OK (3ms)
+
+Served asset /steppable_form.js - 304 Not Modified (4ms)
+
+Served asset /plupload.gears.js - 304 Not Modified (7ms)
+
+Served asset /hugrid.js - 304 Not Modified (4ms)
+
+Served asset /plupload_it.js - 304 Not Modified (26ms)
+
+Served asset /plupload/i18n/pt-br.js - 304 Not Modified (13ms)
+
+Served asset /categories.js - 304 Not Modified (3ms)
+
+Served asset /jquery.plupload.queue.js - 304 Not Modified (9ms)
+
+Served asset /exists.js - 304 Not Modified (3ms)
+
+Served asset /inspirations.js - 304 Not Modified (3ms)
+
+Served asset /festival-minuto-logo.jpg - 200 OK (139ms)
+
+Started GET "/uploads/gallery_photos/photo/51476425caebf30c77000284/list_02-IMG_3795.jpg" for 127.0.0.1 at 2013-04-12 09:23:15 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/51476425caebf30c77000284/list_02-IMG_3795.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+Started GET "/uploads/gallery_photos/photo/514759d2caebf30c77000262/list_5.jpg" for 127.0.0.1 at 2013-04-12 09:23:15 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/514759d2caebf30c77000262/list_5.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+Started GET "/uploads/gallery_photos/photo/514912b3caebf30c7700033a/list_cecilio_12__10_11_12__skates.jpg" for 127.0.0.1 at 2013-04-12 09:23:15 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/514912b3caebf30c7700033a/list_cecilio_12__10_11_12__skates.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.0ms)
+
+Started GET "/uploads/gallery_photos/photo/512e77a1caebf30c77000115/list_6ok.jpg" for 127.0.0.1 at 2013-04-12 09:23:15 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512e77a1caebf30c77000115/list_6ok.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+Started GET "/uploads/gallery_photos/photo/512d2009caebf30c77000107/list_arlin_1.jpg" for 127.0.0.1 at 2013-04-12 09:23:15 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512d2009caebf30c77000107/list_arlin_1.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+Started GET "/uploads/gallery_photos/photo/512cf7fbcaebf30c7700007b/list_predinho.jpg" for 127.0.0.1 at 2013-04-12 09:23:15 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512cf7fbcaebf30c7700007b/list_predinho.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+Started GET "/uploads/gallery_photos/photo/512d1b41caebf30c770000fa/list_toes-1.jpg" for 127.0.0.1 at 2013-04-12 09:23:15 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512d1b41caebf30c770000fa/list_toes-1.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Started GET "/uploads/gallery_photos/photo/51477630caebf30c77000293/list_tales_6.jpg" for 127.0.0.1 at 2013-04-12 09:23:16 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/51477630caebf30c77000293/list_tales_6.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+Started GET "/uploads/gallery_photos/photo/512d02afcaebf30c770000d6/list_c5f2.jpg" for 127.0.0.1 at 2013-04-12 09:23:16 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512d02afcaebf30c770000d6/list_c5f2.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+Started GET "/uploads/gallery_photos/photo/5143829dcaebf30c770001f8/list_keti-ilustra__o-digital-Sophie.jpg" for 127.0.0.1 at 2013-04-12 09:23:16 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/5143829dcaebf30c770001f8/list_keti-ilustra__o-digital-Sophie.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+Started GET "/uploads/gallery_photos/photo/512d19b0caebf30c770000ef/list_sliks-4.jpg" for 127.0.0.1 at 2013-04-12 09:23:16 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512d19b0caebf30c770000ef/list_sliks-4.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+Started GET "/uploads/gallery_photos/photo/513e4464caebf30c770001a8/list_dr1.jpg" for 127.0.0.1 at 2013-04-12 09:23:16 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/513e4464caebf30c770001a8/list_dr1.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Started GET "/uploads/inspiration_photos/photo/5162fe2bcaebf34c03000001/thumb_tumblr_mkni7dpRCi1qffbeho3_1280.jpg" for 127.0.0.1 at 2013-04-12 09:23:16 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/inspiration_photos/photo/5162fe2bcaebf34c03000001/thumb_tumblr_mkni7dpRCi1qffbeho3_1280.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Served asset /avatar.jpg - 404 Not Found (22ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/avatar.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+Served asset /l-arrow.png - 404 Not Found (22ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/l-arrow.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+Served asset /loader.gif - 200 OK (159ms)
+
+Started GET "/uploads/inspiration_photos/photo/512bb341caebf30c7700006c/thumb_Ambientes_para_se_inspirar_1.png" for 127.0.0.1 at 2013-04-12 09:23:16 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/inspiration_photos/photo/512bb341caebf30c7700006c/thumb_Ambientes_para_se_inspirar_1.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Served asset /r-arrow.png - 404 Not Found (25ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/r-arrow.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+Started GET "/design" for 127.0.0.1 at 2013-04-12 09:23:24 -0300
+Processing by DesignController#index as HTML
+  Rendered design/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_header.html.erb (0.8ms)
+  Rendered application/_grid.html.erb (0.1ms)
+Completed 200 OK in 42ms (Views: 41.0ms)
+
+Served asset /application.css - 304 Not Modified (3ms)
+
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+Served asset /dispatcher.js - 304 Not Modified (0ms)
+
+Served asset /hugrid.js - 304 Not Modified (0ms)
+
+Served asset /jquery-gallerize.js - 304 Not Modified (0ms)
+
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+Served asset /modernizr.js - 304 Not Modified (0ms)
+
+Served asset /plupload.js - 304 Not Modified (0ms)
+
+Served asset /plupload/i18n/pt-br.js - 304 Not Modified (0ms)
+
+Served asset /plupload.settings.js - 304 Not Modified (0ms)
+
+Served asset /jquery.plupload.queue.js - 304 Not Modified (0ms)
+
+Served asset /plupload.flash.js - 304 Not Modified (0ms)
+
+Served asset /plupload.html4.js - 304 Not Modified (0ms)
+
+Served asset /plupload.html5.js - 304 Not Modified (0ms)
+
+Served asset /plupload.gears.js - 304 Not Modified (0ms)
+
+Served asset /plupload_it.js - 304 Not Modified (1ms)
+
+Served asset /application.js - 304 Not Modified (12ms)
+
+Served asset /addThis_config.js - 304 Not Modified (0ms)
+
+Served asset /categories.js - 304 Not Modified (0ms)
+
+Served asset /creators.js - 304 Not Modified (1ms)
+
+Served asset /exists.js - 304 Not Modified (0ms)
+
+Served asset /helpers.js - 304 Not Modified (0ms)
+
+Served asset /home.js - 304 Not Modified (0ms)
+
+Served asset /inspirations.js - 304 Not Modified (0ms)
+
+Served asset /steppable_form.js - 304 Not Modified (0ms)
+
+Served asset /festival-minuto-logo.jpg - 304 Not Modified (0ms)
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 09:23:30 -0300
+Processing by HomeController#index as HTML
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=pages selector=[34m{"$query"=>{"type"=>:creators}, "$orderby"=>{:_id=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m1.7600ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=pages selector=[34m{"$query"=>{"type"=>:inspirations}, "$orderby"=>{:_id=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m1.6911ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"art"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.1510ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"architecture"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.0878ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"design"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.3570ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"photography"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m1.7920ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"fashion"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.3110ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "_id"=>{"$nin"=>["512d0958caebf30c770000dd", "512cfceecaebf30c7700009e", "51491064caebf30c7700032b", "51475deccaebf30c7700026d"]}}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil ([32m6.5470ms[0m)
+  Rendered shared/_page_title.html.erb (1.0ms)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512d0958caebf30c770000dd"}} [0m([32m3.1369ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d0958caebf30c770000dd"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.4280ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d0958caebf30c770000dd"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.4201ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512cfceecaebf30c7700009e"}} [0m([32m2.4669ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512cfceecaebf30c7700009e"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.3369ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512cfceecaebf30c7700009e"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.2871ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"51491064caebf30c7700032b"}} [0m([32m2.5449ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51491064caebf30c7700032b"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.8999ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51491064caebf30c7700032b"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.2051ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"51475deccaebf30c7700026d"}} [0m([32m2.5430ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51475deccaebf30c7700026d"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.6941ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51475deccaebf30c7700026d"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.7248ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"514775dbcaebf30c77000290"}} [0m([32m5.4288ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"514775dbcaebf30c77000290"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.2828ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"514775dbcaebf30c77000290"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.4873ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"5147597ecaebf30c7700025e"}} [0m([32m2.8501ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"5147597ecaebf30c7700025e"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.8714ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"5147597ecaebf30c7700025e"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.5441ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512e7584caebf30c77000112"}} [0m([32m2.5392ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512e7584caebf30c77000112"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m4.1108ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512e7584caebf30c77000112"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m4.0030ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512d1fbccaebf30c77000103"}} [0m([32m2.4760ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d1fbccaebf30c77000103"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.1722ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d1fbccaebf30c77000103"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.0868ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"51252022caebf3fc1300001b"}} [0m([32m2.5442ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51252022caebf3fc1300001b"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m5.1091ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51252022caebf3fc1300001b"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m5.2509ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512d1908caebf30c770000e9"}} [0m([32m2.6920ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d1908caebf30c770000e9"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.2446ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d1908caebf30c770000e9"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.3069ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"5137a096caebf30c77000127"}} [0m([32m2.4037ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"5137a096caebf30c77000127"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.5889ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"5137a096caebf30c77000127"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.5741ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"513e35d2caebf30c77000135"}} [0m([32m2.4261ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"513e35d2caebf30c77000135"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.6128ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"513e35d2caebf30c77000135"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.6402ms[0m)
+  Rendered creators/_creators_list.html.erb (559.4ms)
+  Rendered creators/_creator_preview.html.erb (0.8ms)
+  Rendered shared/_page_title.html.erb (0.7ms)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=inspirations selector=[34m{"$query"=>{"published"=>true, "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=2 skip=0 batch_size=nil fields=nil ([32m4.0331ms[0m)
+  Rendered inspirations/_list.html.erb (12.2ms)
+  Rendered home/index.html.erb within layouts/application (692.1ms)
+  Rendered shared/_header.html.erb (0.7ms)
+  Rendered application/_grid.html.erb (0.1ms)
+Completed 200 OK in 889ms (Views: 728.2ms)
+
+Served asset /application.css - 304 Not Modified (2ms)
+
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+Served asset /dispatcher.js - 304 Not Modified (0ms)
+
+Served asset /plupload.js - 304 Not Modified (0ms)
+
+Served asset /plupload/i18n/pt-br.js - 304 Not Modified (0ms)
+
+Served asset /jquery-gallerize.js - 304 Not Modified (0ms)
+
+Served asset /hugrid.js - 304 Not Modified (0ms)
+
+Served asset /modernizr.js - 304 Not Modified (1ms)
+
+Served asset /plupload.settings.js - 304 Not Modified (0ms)
+
+Served asset /jquery.plupload.queue.js - 304 Not Modified (0ms)
+
+Served asset /plupload.flash.js - 304 Not Modified (0ms)
+
+Served asset /plupload.html4.js - 304 Not Modified (0ms)
+
+Served asset /plupload.html5.js - 304 Not Modified (0ms)
+
+Served asset /plupload.gears.js - 304 Not Modified (0ms)
+
+Served asset /plupload_it.js - 304 Not Modified (1ms)
+
+Served asset /application.js - 304 Not Modified (5ms)
+
+Served asset /addThis_config.js - 304 Not Modified (0ms)
+
+Served asset /categories.js - 304 Not Modified (0ms)
+
+Served asset /creators.js - 304 Not Modified (0ms)
+
+Served asset /exists.js - 304 Not Modified (0ms)
+
+Served asset /helpers.js - 304 Not Modified (0ms)
+
+Served asset /home.js - 304 Not Modified (0ms)
+
+Served asset /inspirations.js - 304 Not Modified (0ms)
+
+Served asset /steppable_form.js - 304 Not Modified (0ms)
+
+Served asset /festival-minuto-logo.jpg - 304 Not Modified (0ms)
+
+Started GET "/uploads/gallery_photos/photo/512d1b41caebf30c770000fa/list_toes-1.jpg" for 127.0.0.1 at 2013-04-12 09:23:31 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512d1b41caebf30c770000fa/list_toes-1.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+Started GET "/uploads/gallery_photos/photo/512d02afcaebf30c770000d6/list_c5f2.jpg" for 127.0.0.1 at 2013-04-12 09:23:31 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512d02afcaebf30c770000d6/list_c5f2.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Started GET "/uploads/gallery_photos/photo/514912b3caebf30c7700033a/list_cecilio_12__10_11_12__skates.jpg" for 127.0.0.1 at 2013-04-12 09:23:31 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/514912b3caebf30c7700033a/list_cecilio_12__10_11_12__skates.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+Started GET "/uploads/gallery_photos/photo/51476425caebf30c77000284/list_02-IMG_3795.jpg" for 127.0.0.1 at 2013-04-12 09:23:31 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/51476425caebf30c77000284/list_02-IMG_3795.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+Started GET "/uploads/gallery_photos/photo/512e77a1caebf30c77000115/list_6ok.jpg" for 127.0.0.1 at 2013-04-12 09:23:31 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512e77a1caebf30c77000115/list_6ok.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+Started GET "/uploads/gallery_photos/photo/51477630caebf30c77000293/list_tales_6.jpg" for 127.0.0.1 at 2013-04-12 09:23:31 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/51477630caebf30c77000293/list_tales_6.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+Started GET "/uploads/gallery_photos/photo/514759d2caebf30c77000262/list_5.jpg" for 127.0.0.1 at 2013-04-12 09:23:31 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/514759d2caebf30c77000262/list_5.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+Started GET "/uploads/gallery_photos/photo/512d2009caebf30c77000107/list_arlin_1.jpg" for 127.0.0.1 at 2013-04-12 09:23:32 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512d2009caebf30c77000107/list_arlin_1.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Started GET "/uploads/gallery_photos/photo/512cf7fbcaebf30c7700007b/list_predinho.jpg" for 127.0.0.1 at 2013-04-12 09:23:32 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512cf7fbcaebf30c7700007b/list_predinho.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+Started GET "/uploads/gallery_photos/photo/512d19b0caebf30c770000ef/list_sliks-4.jpg" for 127.0.0.1 at 2013-04-12 09:23:32 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512d19b0caebf30c770000ef/list_sliks-4.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Started GET "/uploads/gallery_photos/photo/5143829dcaebf30c770001f8/list_keti-ilustra__o-digital-Sophie.jpg" for 127.0.0.1 at 2013-04-12 09:23:32 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/5143829dcaebf30c770001f8/list_keti-ilustra__o-digital-Sophie.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+Started GET "/uploads/gallery_photos/photo/513e4464caebf30c770001a8/list_dr1.jpg" for 127.0.0.1 at 2013-04-12 09:23:32 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/513e4464caebf30c770001a8/list_dr1.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Served asset /avatar.jpg - 404 Not Found (136ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/avatar.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Started GET "/uploads/inspiration_photos/photo/5162fe2bcaebf34c03000001/thumb_tumblr_mkni7dpRCi1qffbeho3_1280.jpg" for 127.0.0.1 at 2013-04-12 09:23:32 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/inspiration_photos/photo/5162fe2bcaebf34c03000001/thumb_tumblr_mkni7dpRCi1qffbeho3_1280.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Served asset /loader.gif - 304 Not Modified (0ms)
+
+Served asset /l-arrow.png - 404 Not Found (22ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/l-arrow.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Served asset /r-arrow.png - 404 Not Found (24ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/r-arrow.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Started GET "/uploads/inspiration_photos/photo/512bb341caebf30c7700006c/thumb_Ambientes_para_se_inspirar_1.png" for 127.0.0.1 at 2013-04-12 09:23:32 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/inspiration_photos/photo/512bb341caebf30c7700006c/thumb_Ambientes_para_se_inspirar_1.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=admin command=[34m{:ismaster=>1} [0m([32m1.6272ms[0m)
+
+Started GET "/" for 127.0.0.1 at 2013-04-12 09:27:41 -0300
+Processing by HomeController#index as HTML
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=pages selector=[34m{"$query"=>{"type"=>:creators}, "$orderby"=>{:_id=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.3401ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=pages selector=[34m{"$query"=>{"type"=>:inspirations}, "$orderby"=>{:_id=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m1.6840ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"art"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.2640ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"architecture"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.1589ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"design"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.2309ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"photography"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m1.6670ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "main_category"=>"fashion"}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.0618ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=creators selector=[34m{"$query"=>{"state"=>"published", "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}, "_id"=>{"$nin"=>["512d0958caebf30c770000dd", "512cfceecaebf30c7700009e", "51491064caebf30c7700032b", "51475deccaebf30c7700026d"]}}, "$orderby"=>{"priority"=>1}} [0mflags=[:slave_ok] limit=0 skip=0 batch_size=nil fields=nil ([32m7.0350ms[0m)
+  Rendered shared/_page_title.html.erb (2.4ms)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512d0958caebf30c770000dd"}} [0m([32m2.7950ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d0958caebf30c770000dd"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.4220ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d0958caebf30c770000dd"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.1972ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512cfceecaebf30c7700009e"}} [0m([32m2.4419ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512cfceecaebf30c7700009e"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.3460ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512cfceecaebf30c7700009e"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.2351ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"51491064caebf30c7700032b"}} [0m([32m2.4731ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51491064caebf30c7700032b"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m2.8870ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51491064caebf30c7700032b"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.1118ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"51475deccaebf30c7700026d"}} [0m([32m3.0189ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51475deccaebf30c7700026d"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.5400ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51475deccaebf30c7700026d"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.7191ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"514775dbcaebf30c77000290"}} [0m([32m2.4309ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"514775dbcaebf30c77000290"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.3140ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"514775dbcaebf30c77000290"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.2599ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"5147597ecaebf30c7700025e"}} [0m([32m2.4059ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"5147597ecaebf30c7700025e"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.2640ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"5147597ecaebf30c7700025e"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.7119ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512e7584caebf30c77000112"}} [0m([32m2.4750ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512e7584caebf30c77000112"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.6540ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512e7584caebf30c77000112"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.8900ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512d1fbccaebf30c77000103"}} [0m([32m2.4641ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d1fbccaebf30c77000103"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.2933ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d1fbccaebf30c77000103"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.0291ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"51252022caebf3fc1300001b"}} [0m([32m2.7709ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51252022caebf3fc1300001b"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m5.3189ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"51252022caebf3fc1300001b"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m5.1908ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"512d1908caebf30c770000e9"}} [0m([32m3.1538ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d1908caebf30c770000e9"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.3967ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"512d1908caebf30c770000e9"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.4256ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"5137a096caebf30c77000127"}} [0m([32m2.4211ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"5137a096caebf30c77000127"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.7649ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"5137a096caebf30c77000127"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.6790ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mCOMMAND[0m      database=newcreators_development command=[34m{:count=>"galleries", :query=>{"creator_id"=>"513e35d2caebf30c77000135"}} [0m([32m2.8632ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"513e35d2caebf30c77000135"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.6123ms[0m)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=galleries selector=[34m{"$query"=>{"creator_id"=>"513e35d2caebf30c77000135"}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=-1 skip=0 batch_size=nil fields=nil ([32m3.6080ms[0m)
+  Rendered creators/_creators_list.html.erb (20190.0ms)
+  Rendered creators/_creator_preview.html.erb (2.0ms)
+  Rendered shared/_page_title.html.erb (1.0ms)
+  [35mMOPED:[0m 127.0.0.1:27017 [33mQUERY[0m        database=newcreators_development collection=inspirations selector=[34m{"$query"=>{"published"=>true, "published_at"=>{"$lte"=>2013-04-12 00:00:00 UTC}}, "$orderby"=>{"created_at"=>-1}} [0mflags=[:slave_ok] limit=2 skip=0 batch_size=nil fields=nil ([32m4.3681ms[0m)
+  Rendered inspirations/_list.html.erb (19.1ms)
+  Rendered home/index.html.erb within layouts/application (20351.1ms)
+  Rendered shared/_header.html.erb (1.9ms)
+  Rendered application/_grid.html.erb (0.8ms)
+Completed 200 OK in 20881ms (Views: 20591.1ms)
+
+Served asset /application.css - 304 Not Modified (9ms)
+
+Served asset /jquery.js - 304 Not Modified (23ms)
+
+Served asset /jquery-ui.js - 304 Not Modified (103ms)
+
+Served asset /jquery_ujs.js - 304 Not Modified (12ms)
+
+Served asset /hugrid.js - 304 Not Modified (10ms)
+
+Served asset /dispatcher.js - 304 Not Modified (4ms)
+
+Served asset /jquery-gallerize.js - 304 Not Modified (15ms)
+
+Served asset /modernizr.js - 304 Not Modified (13ms)
+
+Served asset /plupload.js - 304 Not Modified (10ms)
+
+Served asset /plupload/i18n/pt-br.js - 304 Not Modified (13ms)
+
+Served asset /plupload.settings.js - 304 Not Modified (6ms)
+
+Served asset /jquery.plupload.queue.js - 304 Not Modified (11ms)
+
+Served asset /plupload.flash.js - 304 Not Modified (16ms)
+
+Served asset /plupload.html4.js - 304 Not Modified (7ms)
+
+Served asset /plupload.html5.js - 304 Not Modified (7ms)
+
+Served asset /plupload.gears.js - 304 Not Modified (7ms)
+
+Served asset /plupload_it.js - 304 Not Modified (24ms)
+
+Served asset /application.js - 304 Not Modified (64ms)
+
+Served asset /addThis_config.js - 304 Not Modified (3ms)
+
+Served asset /categories.js - 304 Not Modified (3ms)
+
+Served asset /creators.js - 304 Not Modified (3ms)
+
+Served asset /exists.js - 304 Not Modified (3ms)
+
+Served asset /helpers.js - 304 Not Modified (3ms)
+
+Served asset /home.js - 304 Not Modified (106ms)
+
+Served asset /inspirations.js - 304 Not Modified (4ms)
+
+Served asset /steppable_form.js - 304 Not Modified (3ms)
+
+Served asset /festival-minuto-logo.jpg - 304 Not Modified (2ms)
+
+Started GET "/uploads/gallery_photos/photo/512d1b41caebf30c770000fa/list_toes-1.jpg" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512d1b41caebf30c770000fa/list_toes-1.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+Started GET "/uploads/gallery_photos/photo/512d02afcaebf30c770000d6/list_c5f2.jpg" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512d02afcaebf30c770000d6/list_c5f2.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+Started GET "/uploads/gallery_photos/photo/514912b3caebf30c7700033a/list_cecilio_12__10_11_12__skates.jpg" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/514912b3caebf30c7700033a/list_cecilio_12__10_11_12__skates.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Started GET "/uploads/gallery_photos/photo/51476425caebf30c77000284/list_02-IMG_3795.jpg" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/51476425caebf30c77000284/list_02-IMG_3795.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+Started GET "/uploads/gallery_photos/photo/512e77a1caebf30c77000115/list_6ok.jpg" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512e77a1caebf30c77000115/list_6ok.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+Started GET "/uploads/gallery_photos/photo/512d2009caebf30c77000107/list_arlin_1.jpg" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512d2009caebf30c77000107/list_arlin_1.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+Started GET "/uploads/gallery_photos/photo/512cf7fbcaebf30c7700007b/list_predinho.jpg" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512cf7fbcaebf30c7700007b/list_predinho.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+Started GET "/uploads/gallery_photos/photo/51477630caebf30c77000293/list_tales_6.jpg" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/51477630caebf30c77000293/list_tales_6.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.8ms)
+
+Started GET "/uploads/gallery_photos/photo/514759d2caebf30c77000262/list_5.jpg" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/514759d2caebf30c77000262/list_5.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Started GET "/uploads/gallery_photos/photo/5143829dcaebf30c770001f8/list_keti-ilustra__o-digital-Sophie.jpg" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/5143829dcaebf30c770001f8/list_keti-ilustra__o-digital-Sophie.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Started GET "/uploads/gallery_photos/photo/513e4464caebf30c770001a8/list_dr1.jpg" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/513e4464caebf30c770001a8/list_dr1.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Served asset /avatar.jpg - 404 Not Found (22ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/avatar.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Started GET "/uploads/gallery_photos/photo/512d19b0caebf30c770000ef/list_sliks-4.jpg" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/gallery_photos/photo/512d19b0caebf30c770000ef/list_sliks-4.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
+
+Started GET "/uploads/inspiration_photos/photo/5162fe2bcaebf34c03000001/thumb_tumblr_mkni7dpRCi1qffbeho3_1280.jpg" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/inspiration_photos/photo/5162fe2bcaebf34c03000001/thumb_tumblr_mkni7dpRCi1qffbeho3_1280.jpg"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+Started GET "/uploads/inspiration_photos/photo/512bb341caebf30c7700006c/thumb_Ambientes_para_se_inspirar_1.png" for 127.0.0.1 at 2013-04-12 09:28:04 -0300
+
+ActionController::RoutingError (No route matches [GET] "/uploads/inspiration_photos/photo/512bb341caebf30c7700006c/thumb_Ambientes_para_se_inspirar_1.png"):
+  actionpack (3.2.12) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.12) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.12) lib/rails/rack/logger.rb:18:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.12) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:60:in `_call'
+  rack-livereload (0.3.12) lib/rack/livereload.rb:51:in `call'
+  actionpack (3.2.12) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.12) lib/rails/engine.rb:479:in `call'
+  railties (3.2.12) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.12) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.12) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.12) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.12) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.12) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/rodrigop/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
