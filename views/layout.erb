@@ -14,10 +14,14 @@
   <![endif]-->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="author" content="nu [nudesign.com.br]">
 
   <link rel="stylesheet" type="text/css" href="/stylesheets/app.css" >
-  <meta name="author" content="nu [nudesign.com.br]">
-  <script type="text/javascript" src="/javascripts/webfont.js"></script>
+  <% if development? %>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/development.css" >
+  <% end %>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
 <body>
   <!--[if lt IE 7]>
@@ -31,5 +35,8 @@
 
   <%= yield %>
 
+  <%= partial "application/grid" if development? %>
+  <script type="text/javascript" src="/javascripts/webfont.js"></script>
+  <script type="text/javascript" src="/javascripts/hugrid.js"></script>
 </body>
 </html>
