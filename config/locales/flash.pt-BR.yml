@@ -1,0 +1,10 @@
+pt-BR:
+  flash:
+    actions:
+      create:
+        notice: "%{resource_name} cadastrado com sucesso."
+      update:
+        notice: "%{resource_name} atualizado com sucesso."
+      destroy:
+        notice: "%{resource_name} excluído com sucesso."
+        alert: "%{resource_name} não pode ser excluído."

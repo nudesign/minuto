@@ -1,0 +1,25 @@
+var html,
+    gallery_wrapper = $(".gallery-list-wrapper"),
+    already_exist,
+    gallery_id = App.creators.show["gallery_id"],
+    new_added_ele;
+already_exist = gallery_wrapper.find(".gallery-list").filter(function(){
+  return $(this).attr("id") == gallery_id ;
+});
+
+if (already_exist.length >= 1) { //check if gallery already exists
+  return false;
+}
+html = "<%= j render @gallery %>";
+$(".gallery-list").removeClass("is-block").addClass("is-none");
+new_added_ele = $(html).appendTo(gallery_wrapper);
+new_added_ele.attr("id", gallery_id);
+new_added_ele.addClass("is-block");
+new_added_ele.gallerize({
+                            items: "li.gallery-item", 
+                            after: function () { 
+                               App.helpers.adjustImagesToGallery(new_added_ele.find(".gallery-item img"), new_added_ele);
+                               $(".loading").hide();
+                               App.helpers.preLoadImages(new_added_ele.find(".gallery-item"));
+                            }
+});

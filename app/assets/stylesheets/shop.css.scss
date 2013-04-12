@@ -1,0 +1,35 @@
+.products-list-item {
+  @include grid(4);
+  background-color: #F2F2F2;
+  height: 384px;
+  overflow: hidden;
+  .product-header {
+    bottom: 8px;
+    display: none;
+    left: 0px;
+    position: absolute;
+    .post-title {
+      @include sml-title;
+      margin-bottom: 0px;
+    }
+  }
+  .block-thumb {
+    width: 384px;
+  }
+  &.single-block {
+    @include grid(2);
+    height: 184px;
+    .block-thumb {
+      width: 184px;
+    }
+  }
+  &:hover {
+    .block-thumb {
+      display: none;
+    }
+    .product-header {
+      display: block;
+    }
+  }
+}
+

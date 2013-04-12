@@ -1,0 +1,12 @@
+<% #TODO poderia ser um objeto? %>
+<% if page.present? %>
+  <h1 class="section-title">
+    <%= link_to page.title, polymorphic_path(page.type) %>
+  </h1>
+  <% if params[:query] || params[:category_id] %>
+    <h2 class="status-title">
+      /
+      <%= params[:query] || t("category.#{params[:category_id]}") %>
+    <h2>
+  <% end %>
+<% end %>

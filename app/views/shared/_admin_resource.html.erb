@@ -1,0 +1,4 @@
+<% if user_signed_in? %>
+  <%= link_to '[ + ]', new_polymorphic_path(resource), class: 'actions-btn'  %>
+  <%= link_to '[ / ]', edit_or_create_page_for(resource.to_s.pluralize), class: 'actions-btn'  %>
+<% end %>

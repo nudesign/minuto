@@ -1,0 +1,6 @@
+<ul class="gallery-list">
+  <li class="loadinga"></li>
+  <% @gallery.photos.each do |p| %>
+  <li class="gallery-item" data-thumb_src= "<%= p.gallery_thumb.url %>" data-gallery="<%= { large_width: p.gallery.size['width'], large_height: p.gallery.size['height'], large_src: p.gallery.url }.to_json %>"> <%= image_tag(p.gallery_thumb.url, :class=>"gallery-image") %> </li>
+  <% end %>
+</ul>

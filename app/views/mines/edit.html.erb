@@ -1,0 +1,20 @@
+<div class="publisher">
+  <h1><%= t("publisher.edit") %> <%= t("menu.mine") %></h1>
+
+  <%= render 'form', mine: @mine %>
+
+  <div id="mine-product-list">
+    <h2><%= t('menu.product.other') %></h2>
+    <p><%= link_to "criar novo produto", new_mine_product_path(@mine), class: 'btn btn-primary' %></p>
+
+  <% @mine.products.each do |product| %>
+    <div class="mine-product product-size-<%= product.size %>">
+      <%= first_image(product, "size_#{product.size}") %>
+      <p>
+        <%= link_to 'editar', edit_mine_product_path(@mine, product), class: 'btn btn-primary' %>
+        <%= link_to 'remover', [@mine, product], :method => :delete, :confirm => t('public_messages.destroy', name: product.name), class: 'btn btn-danger' %>
+      </p>
+    </div>
+  <% end %>
+
+</div>

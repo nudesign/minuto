@@ -1,0 +1,4 @@
+<% if page.present? %>
+  <%= raw page.description_formatted %>
+  <%= link_to "editar", edit_page_path(page), class: "btn btn-primary actions-control" %>
+<% end %>

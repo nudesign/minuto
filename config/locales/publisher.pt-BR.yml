@@ -1,0 +1,18 @@
+pt-BR:
+  publisher:
+    confirm:    'coce tem certeza?'
+    new:        'criar novo'
+    new_fem:    'criar nova'
+    list_all:   'listar todos'
+    listing:    'listando'
+    destroy:    'remover'
+    edit:       'editar'
+    editing:    'editando'
+    preview:    'preview'
+    draft:      'rascunho'
+    published:  'publicado'
+    unapproved: 'não aprovado'
+    save:       'salvar'
+    saving:     'salvando…'
+    or:         'ou'
+    unapproved: 'não aprovado'

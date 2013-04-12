@@ -1,0 +1,82 @@
+.mine-show-list {
+  @include grid-father(12);
+  background: url('../assets/mine-bg.jpg') 2px 0px;
+  height: 596px;
+  margin-bottom: 44px;
+  padding: 0 2px;
+}
+.mine-show-item {
+  position: absolute;
+  overflow: hidden;
+  min-height: 196px;
+  min-width: 196px;
+  &:hover ~ .tooltip {
+    display: block;
+  }
+}
+
+.mine-list {
+  @include grid-father(8);
+  .list-item.type-one {
+    @include grid(4);
+    height: 192px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    .list-item-thumb {
+      float: left;
+      margin-bottom: 16px;
+    }
+    .list-item-header {
+      @include bg-rgba($art-rgba-color, 0.7);
+      float: none;
+      height: 192px;
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      z-index: 2;
+      .list-item-title {
+        @include big-title;
+        color: $inverse-color;
+        padding-top: 12px;
+        margin-top: 32px;
+      }
+      .list-item-txt {
+        color: $inverse-color;
+      }
+    }
+  }
+  .list-item.type-two {    
+    .micro-thumbs-ctn {
+      float: left;
+      width: 198px;    
+      .list-item-thumb.micro-thumb {
+        float: left;
+        height: 95px;
+        margin: 0 1px 1px 0;
+        width: 95px;
+      }
+    }
+    .list-item-header {
+      /*@include bg-rgba($art-rgba-color, 0.7);*/
+      background-color: #BBB;
+      float: none;
+      height: 191px;
+      left: 192px;
+      padding: 0px 2px;
+      position: absolute;
+      top: 0px;
+      width: 188px;
+      z-index: 2;
+      .list-item-title {
+        @include big-title;
+        color: $inverse-color;
+        padding-top: 12px;
+        margin-top: 16px;
+      }
+      .list-item-txt {
+        color: $inverse-color;
+      }
+    }
+  }
+}  
+

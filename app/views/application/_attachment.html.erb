@@ -1,0 +1,8 @@
+<div class="field-group">
+  <div class="field">
+    <%= label_tag label %>
+    <%= attachment_uploader resource, :photos, :video %>
+    <%= attachment_uploader resource, :photos, :image %>
+    <%= attachment_loader resource, :photos %>
+  </div>
+</div>

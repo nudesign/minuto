@@ -1,0 +1,18 @@
+<%= content_tag(:li, class: "sortable creators-list-item actions-wrapper opa-effect-item #{creator.state}", data: { id: creator.id.to_s, preview: creator_preview_data(creator) }) do %>
+  <%= content_tag(:label, class: "creators-category-label category-#{creator.main_category}") do %>
+    <%= link_to t("category.#{creator.main_category}"), category_path(creator.main_category) if creator.main_category.present? %>
+  <%- end -%>
+
+  <%= link_to image_tag(creator.cover_gallery_photo.list.url, class: "creator-thumb"), creator if creator.have_gallery_with_photos? %>
+
+  <hgroup class="creator-header">
+    <h1 class="creator-nickname">
+      <%#= image_tag(creator.photos.first.thumb.url) if creator.photos.present? %>
+      <%= link_to creator.name, creator  %>
+    </h1>
+  </hgroup>
+
+  <%- if user_signed_in? -%>
+    <%= link_to "editar", edit_creator_path(creator), class: "btn btn-primary actions-control" %>
+  <%- end -%>
+<%- end -%>

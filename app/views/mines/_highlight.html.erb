@@ -1,0 +1,32 @@
+<ul class="mine-show-list opa-effect-container">
+
+  <% highlight && highlight.products.present? && highlight.products.first.tap do |product| %>
+    <li class="mine-show-item opa-effect-item">
+      <label class="corner-category-label category-design">
+        <a href="">&nbsp;</a>
+      </label>
+      <%= link_to first_image(product, nil, class: "product-thumb block-thumb") %><br/>
+      <%= link_to 'edit product', edit_mine_product_path(highlight, product) %>
+    </li>
+  <% end %>
+  <li class="mine-show-item opa-effect-item" style="left: 202px">
+    <label class="corner-category-label category-design">
+      <a href="">&nbsp;</a>
+    </label>
+    <%= link_to image_tag("mine-thumb12.jpg", class: "product-thumb block-thumb") %>
+  </li>
+  <li class="mine-show-item opa-effect-item" style="left: 202px; top: 400px">
+    <label class="corner-category-label category-design">
+      <a href="">&nbsp;</a>
+    </label>
+    <%= link_to image_tag("mine-thumb11.jpg", class: "product-thumb block-thumb") %>
+  </li>
+  <li class="tooltip" style="left: 7px; top: 200px">
+    <hgroup class="">
+      <h1>nome do produto</h1>
+      <h2>nome da loja</h2>
+      <h3>R$ 0,00</h3>
+    </hgroup>
+    <a href="">comprar</a>
+  </li>
+</ul>

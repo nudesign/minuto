@@ -1,0 +1,79 @@
+<section class="creators-show container">
+  <div class="section-header-ctn">
+    <h1 class="section-title">
+      <a href="">creators</a>
+    </h1>
+  </div>
+  
+  <article class="creator-profile">
+    <div class="profile-content-wrapper">
+      <header class="profile-header">
+        <%= link_to image_tag("avatar.jpg", class: "profile-avatar") %>
+        <hgroup class="profile-main-infos">
+          <h1 class="profile-name"><%= @creator.name %></h1>
+          <h2 class="profile-location secondary-title"><%= @creator.location %></h2>
+          <h2 class="profile-occupation secondary-title"><%= @creator.occupation %></h2>
+        </hgroup>
+      </header>
+      <section class="profile-extra-infos">
+        <div class="creator-categories textblock-wrapper">
+          <span class="textinline-title">
+            categorias
+          </span>
+          <% @creator.categories.each do |category| %>
+            <%= content_tag(:label, class: "inline-category-label category-#{category}") do %>
+              <%= t("category.#{category}") %>
+            <%- end -%>
+          <% end %>
+        </div>
+        <div class="creator-release textblock-wrapper">
+          <span class="textblock-title">
+            release
+          </span>
+          <div class="textblock-ctn">
+            <%= raw @creator.release_formatted %>
+          </div>
+        </div>
+        <div class="creator-interview textblock-wrapper">
+          <span class="textblock-title">
+            entrevista
+          </span>
+          <div class="textblock-ctn">
+            <%= raw @creator.interview_formatted %>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="creator-profile-galleries-container">
+      <ul class="galleries-list">
+        <% @creator.galleries_published.each_with_index do |gallery, i| %>
+          <% unless gallery.photos.empty? %>
+            <li class="actions-wrapper galleries-list-item <% if i == 0 %> active <% end %>" data-gallery_src="<%= creator_gallery_path(@creator, gallery) %>" data-id=<%= i %>>
+              <%= image_tag(gallery.photos.first.thumb.url) if gallery.photos.present? %>
+              <div class="more-info">
+                <%= gallery.title %><br>
+                <%= t(:gallery_quantity, count: gallery.photos.count) %>
+              </div>
+            </li>
+          <% end %>
+        <% end %>
+      </ul>
+      <% unless @creator.galleries_published.empty? %>
+      <div class="gallery-list-wrapper">
+        <ul class="gallery-list is-block" id="0">
+          <li class="loading"></li>
+          <% @creator.galleries_published.first.photos.each do |p| %>
+          <li class="gallery-item" data-thumb_src= "<%= p.gallery_thumb.url %>" data-gallery="<%= { large_width: p.gallery.size['width'], large_height: p.gallery.size['height'], large_src: p.gallery.url }.to_json %>"> <%= image_tag(p.gallery_thumb.url, :class=>"gallery-image") %> </li>
+          <% end %>
+        </ul>
+      </div>
+      <% end %>
+      <div class="addthis_toolbox">
+        <h3 class="share-bt">compartilhe</h3>
+        <a class="addthis_button_facebook_like share-bt" fb:like:layout="button_count"></a>
+        <a class="addthis_button_tweet share-bt"></a>
+        <a class="addthis_button_pinterest_pinit share-bt"></a>
+      </div>
+    </section>
+  </article>
+</section>

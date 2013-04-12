@@ -1,0 +1,59 @@
+<section class="inspiracao-index container">
+
+  <header class="section-header-ctn">
+    <%= render 'shared/page_title', page: @page %>
+    <ul class="filters-ctn">
+      <li class="filter-item">
+        <%= form_tag search_inspirations_path, method: :get do %>
+          <input type="text" placeholder="<%= search_placeholder(params[:query]) %>" class="bt bt-search-field" name="query">
+          <button class="bt bt-toggle bt-toggle-search" type="submit">
+            <span class="caret"></span>
+          </button>
+        <% end %>
+      </li>
+      <li class="filter-item" id="category-filter">
+        <button class="bt bt-label"><%= filtered_category(params[:category_id]) %></button>
+        <button class="bt bt-toggle">
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <%- Creator::CATEGORIES.each do |category| -%>
+            <li> <%= link_to t("category.#{category}"), category_path(category) %> </li>
+          <%- end -%>
+        </ul>
+      </li>
+    </ul>
+  </header>
+
+  <%= render 'highlight' if @highlight %>
+
+  <section class="page-description-item actions-wrapper">
+    <%= render 'shared/page_info', page: @page %>
+  </section>
+  <ul class="posts-list">
+    <%= render partial: 'inspirations/list', collection: @inspirations, as: :inspiration %>
+  </ul>
+  <section class="posts-tags-list opa-effect-container">
+    <h2>tags</h2>
+    <p>
+      <% tag_list.each do |tag| %>
+        <%= link_to tag, by_tag_inspirations_path(tag), class: "tag-item opa-effect-item" %>
+      <% end %>
+    </p>
+  </section>
+</section>
+
+<% if @instagram_images %>
+<section>
+  <h2>instagram</h2>
+  <ul class="posts-list">
+    <% @instagram_images.each do |image| %>
+    <li style="float:left; margin-left: 4px;">
+      <%= link_to image.link, target: "_blank" do %>
+        <img src="<%= image.images.thumbnail.url %>">
+      <% end %>
+    </li>
+    <% end %>
+  </ul>
+</section>
+<% end %>

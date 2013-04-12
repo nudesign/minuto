@@ -1,0 +1,69 @@
+/* BLOCO DE COLUNAS ---------------------------------------------------------------------------------------------------- */
+.articles-home {
+  @include grid_father(4);
+}
+.articles-index {
+  @include grid_father(12);
+  .articles-list {
+    @include grid_father(8);
+  }
+}
+.columnists-container {
+  /* transformar em padrão -------------------------------------------------- */
+  @include grid(2);
+  padding-top: 3px;
+  h2 {
+    margin-bottom: 13px;
+  }
+  /* ------------------------------------------------------------------------ */
+}
+
+.articles-list-item {
+  @include grid(4);
+  color: $inverse-color;
+  .article-thumb {
+    float: left;
+  }
+  .article-blockquote {
+    @include grid(2);
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    .article-quote {
+      @include big-title;
+      @include text;
+      color: $inverse-color;
+      font-weight: normal;
+      margin-top: 8px;
+      padding: 4px 4px 0px;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .article-header {
+      bottom: 0px;
+      position: absolute;
+      right: 0px;
+      padding: 16px 0px 13px;
+      .article-title {
+        @include title;
+        @include mid-title;
+        display: inline-block;
+        margin-bottom: 0px;
+        padding: 2px 4px 0px;
+      }
+      .article-autor {
+        @include text;
+        font-weight: normal;
+        padding: 0px 4px;
+        &:before {
+          color: $inverse-color;
+          content: 'por';
+        }
+      }
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */

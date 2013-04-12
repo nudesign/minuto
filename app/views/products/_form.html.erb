@@ -1,0 +1,70 @@
+<%= form_for([mine, product]) do |f| %>
+  <%= render 'form_messages', object: product %>
+
+  <div class="field-group">
+    <div class="field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :store_name %>
+      <%= f.text_field :store_name %>
+    </div>
+    <div class="field">
+      <%= f.label :store_link %>
+      <%= f.text_field :store_link %>
+    </div>
+    <div class="field">
+      <%= f.label :price %>
+      <%= f.text_field :price %>
+    </div>
+  </div>
+
+  <div class="field-group">
+    <div class="field">
+      <%= f.label :size %>
+      <% Product::SIZES.each do |size| %>
+        <p class='label-radio'>
+          <%= radio_button :product, :size, size %>
+          <%= label :product, "size_#{size}", t("size_types.#{size}") %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="field-group">
+    <div class="field">
+      <%= f.label :main_category %>
+      <% Product::CATEGORIES.each do |category| %>
+        <p class='label-radio'>
+          <%= radio_button :product, :main_category, category %>
+          <%= label :product, "main_category_#{category}", t("category.#{category}") %>
+        </p>
+      <% end %>
+    </div>
+
+    <div class="field">
+      <%= f.label :categories %>
+      <% Product::CATEGORIES.each do |category| %>
+        <p class='label-radio'>
+          <%= check_box_tag "categories[]", category, @product.categories.include?(category), id: "category_#{category}" %>
+          <%= label_tag "category_#{category}", t("category.#{category}") %>
+        </p>
+      <% end %>
+    </div>
+  </div>
+
+  <% unless product.new_record? %>
+    <%= render 'attachment_embedded', resource: product, label: :imagens, parent: mine %>
+  <% end %>
+
+  <div class="actions">
+    <div class="field-group">
+      <%= f.submit "save product", class: 'btn btn-primary' %>
+      <%= link_to 'remover', [mine, product], :method => :delete, :confirm => t('public_messages.destroy', name: product.name), class: 'btn btn-danger' %>
+      <%= link_to "cancel", edit_mine_path(mine), class: 'btn' %>
+    </div>
+
+    <%= render 'status', object: product, f: f %>
+  </div>
+<% end %>

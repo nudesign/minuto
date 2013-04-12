@@ -1,0 +1,19 @@
+<ul class="mine-list">
+  <% mines && mines.each do |mine| %>
+    <li class="mine-list-item list-item type-two actions-wrapper">
+      <a href="#" style="display: block; ">
+        <div class="micro-thumbs-ctn">
+          <%= products_by_mine(mine) %>
+        </div>
+        <hgroup class="list-item-header inverse-color is-off-on">
+          <h1 class="list-item-title">
+            <%= mine.title %>
+          </h1>
+          <h4 class="list-item-txt">
+            <%= l mine.created_at, format: :short_date %>
+          </h4>
+        </hgroup>
+      </a>
+    </li>
+  <% end %>
+</ul>
