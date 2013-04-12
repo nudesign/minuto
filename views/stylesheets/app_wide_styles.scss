@@ -95,6 +95,10 @@ p + p {
   margin-bottom: 32px;
   padding: 7px 4px 0px;
   width: 400px;
+  &.blank-title {
+    padding: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .title-border {
@@ -335,6 +339,11 @@ input[type="color"]:focus,
     width: 0;
 }
 
+.basic-text-ctn {
+  @include grid(5);
+  @include colunms(1);
+}
+
 /* HOME */
 
 .home-text-ctn {
@@ -387,6 +396,13 @@ input[type="color"]:focus,
 }
 .border-top {
   border-top: 1px solid #000;
+}
+
+/* QUEM SOMOS */
+
+.about-index {
+  @include grid_father(12);
+  @include preffix(3);
 }
 
 
