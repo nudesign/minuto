@@ -1,0 +1,42 @@
+/* FONT SIZES, STYLES AND FAMILIES */
+
+@mixin section-title {
+  color: $id-color;
+  font-size: 20px;
+  line-height: 16px;
+  text-transform: lowercase;
+}
+
+/* FONT SIZES, STYLES AND FAMILIES */
+
+@mixin basic {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+@mixin big-title {
+  color: $id-color;
+  font-size: 30px;
+  line-height: 32px;
+}
+@mixin mid-title {
+  font-size: 16px;
+  line-height: 16px;
+}
+@mixin sml-title {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+@mixin text($color: $primary-color) {
+  color: $color;
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+}
+
+@mixin title($color: $primary-color) {
+  color: $color;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
