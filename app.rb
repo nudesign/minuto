@@ -22,7 +22,6 @@ class Minuto < Sinatra::Base
   end
 
   get '/:page' do
-    p params
     erb params[:page].to_sym
   end
 
