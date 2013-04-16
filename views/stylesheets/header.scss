@@ -20,7 +20,7 @@
 
 .master-menu {
   @include grid(12);
-  @include mid-title;
+  @include menu-title;
   @include title;
   padding-top: 36px;
   .menu-iten {

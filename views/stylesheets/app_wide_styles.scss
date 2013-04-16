@@ -36,6 +36,7 @@ h1, h2, h3 {
 }
 h4, h5, h6 {
   @include text;
+  font-weight: normal;
   padding: 0px 4px;
 }
 
@@ -75,25 +76,6 @@ p + p {
 /* -------------------------------------------------------------------------- */
 
 
-/* ESTADO - ALTERNÁVEL ------------------------------------------------------ */
-
-.is-switchable {
-  .is-on-off {
-    display: block;
-  }
-  .is-off-on {
-    display: none;
-  }
-  &:hover {
-    .is-on-off {
-      display: none;
-    }
-    .is-off-on {
-      display: block;
-    }
-  }
-}
-
 /* MÓDULO — CABEÇALHO DAS PÁGINAS ------------------------------------------- */
 .section-header-ctn {
   @include clearfix;
@@ -117,7 +99,7 @@ p + p {
 
 .title-border {
   border-top: 1px dotted $id-color;
-  float: left;
+  display: inline-block;
   padding-top: 15px;
   width: 128px;
 }
@@ -358,6 +340,53 @@ input[type="color"]:focus,
 .home-text-ctn {
   @include grid(10);
   @include colunms(2);
+}
+
+/* CASES */
+
+.gallery-window.case-images {
+  border: solid #000;
+  border-width: 1px 0px;
+  margin-top: 32px;
+  padding: 32px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  .gallery-river {
+    min-width: 3000px;
+  }
+  .river-image {
+    float: left;
+    margin-right: 16px;
+  }
+}
+
+.data-ctn {
+  @include grid_father(15);
+  margin-top: 32px;
+  &.case-data {
+    background-color: #CCC;
+    h5 {
+      @include mid-title;
+      color: #FFF;
+    }
+  }
+  .data-header {
+    @include grid(3, 8px, 8px, 8px);
+    @include section-title;
+    @include big-title;
+    padding-top: 16px;
+  }
+  .txt-ctn {
+    @include grid(12);
+    padding: 22px 0 16px;
+    .highlight-paragrafh {
+      @include mid-title;
+    }
+  }
+}
+.border-top {
+  border-top: 1px solid #000;
 }
 
 
