@@ -48,7 +48,7 @@ p {
   padding: 0px 4px;
 }
 p + p {
-  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .hidden {
@@ -91,10 +91,9 @@ p + p {
   @include section-title;
   @include big-title;
   display: inline-block;
-  float: left;
   margin-bottom: 32px;
   padding: 7px 4px 0px;
-  width: 400px;
+  width: 356px;
   &.blank-title {
     padding: 0px;
     margin-bottom: 0px;
@@ -106,33 +105,6 @@ p + p {
   display: inline-block;
   padding-top: 15px;
   width: 128px;
-}
-
-/* LAYOUT — LISTAS ----------------------------------------------------------------------- */
-.list-item {
-  @include grid(4);
-  margin-bottom: 16px;
-  overflow: hidden;
-}
-.list-item-thumb {
-  float: left;
-  margin-bottom: 12px;
-}
-.list-item-header {
-  float: left;
-  margin-bottom: 16px;
-  width: 100%;
-  .list-item-title {
-    padding-top: 3px;
-  }
-  .title-big {
-    @include big-title();
-    margin-bottom: -1px;
-    padding-top: 0px;
-  }
-  .list-item-txt {
-
-  }
 }
 
 /* --------------------------------------------------------------------------------------- */
@@ -202,11 +174,13 @@ p + p {
 
 /* COMPLEMENTO DA GALERIA */
 
-.wide-gallery {
+.gallery-frame {
   border: 0px solid $secondary-color;
   border-top-width: 1px;
   border-bottom-width: 1px;
   margin: 16px 0;
+}
+.wide-gallery {
   padding: 16px 0 16px 200px;
 }
 
@@ -265,7 +239,7 @@ p + p {
 }
 /* -------------------------------------------------------------------------- */
 
-/* TOOLTIP */
+/* TOOLTIP ------------------------------------------------------------------ */
 .tooltip {
   background-color: #F2F2F2;
   border: 1px solid #B3B3B3;
@@ -277,71 +251,68 @@ p + p {
   z-index: 2;
 }
 
-/* BOOTSTRAP OVERRIDES */
+/* ESTILOS PARA REPARAÇÃO POSTERIOR */
 
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input {
-  background-color: #FFF;
-  border: 1px solid #BBB;
-  -webkit-box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.075);
+.title1 {
+  @include title;
+  @include section-title;
+  @include big-title;
+  margin-bottom: 0px;
+  padding: 7px 4px 0px;
 }
 
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {
-  border-color: rgba(31,165,169,.5);
-  outline: 0;
-  outline: thin dotted \9;
-  /* IE6-9 */
-
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px rgba(31,165,169,.6);
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px rgba(31,165,169,.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px rgba(31,165,169,.6);
+.title2 {
+  @include mid-title;
+  
 }
 
-.caret {
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 4px solid #999;
-    content: "";
-    display: inline-block;
-    height: 0;
-    vertical-align: top;
-    width: 0;
+.title-border ~ .title-border {
+  margin-top: 48px;
 }
 
-.basic-text-ctn {
-  @include grid(5);
-  @include colunms(1);
+.pres-text-ctn {
+  margin-bottom: 48px;
+}
+
+.txt-ctn {
+  @include grid(6);
+}
+
+.video-list {
+  float: left;
+  .video-list-item {
+    float: left;
+  }
+}
+
+.cases-list {
+  @include grid_father(12);
+  .list-item {
+    @include grid(5);
+  }
+  .list-item-header {
+    margin-top: 16px;
+  }
+}
+
+.clients-list {
+  .list-item {
+    @include grid(3);
+  }
+}
+
+.list-item {
+  margin-bottom: 32px;
+}
+
+.about-us-list {
+  @include grid_father(12);
+  .media-ctn {
+    @include grid(8);
+  }
+  .txt-ctn {
+    @include grid(4);
+  }
 }
 
 /* HOME */
@@ -400,7 +371,7 @@ input[type="color"]:focus,
 
 /* QUEM SOMOS */
 
-.about-index {
+.indented-index {
   @include grid_father(12);
   @include preffix(3);
 }
