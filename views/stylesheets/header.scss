@@ -29,7 +29,7 @@
     .master-menu-link {
       border-bottom: 2px solid $secondary-color;
       padding: 0px 8px 14px;
-      &:hover {
+      &:hover, &.active {
         border-bottom: 6px solid #740F0D;
         padding-bottom: 10px;
       }
