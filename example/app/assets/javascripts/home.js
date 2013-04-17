@@ -37,28 +37,28 @@ App.home.homeRiver = ({
 		init: function () {
 			this.right_arrow = $(".home-river.right-arrow");
 			this.left_arrow = $(".home-river.left-arrow");
-			this.creators_list = $(".creators-list");
-			this.creators_list_items = $(".creators-list-item"); 
+			this.gallery_list = $(".gallery-list");
+			this.gallery_list_items = $(".gallery-list-item");
 			this.river_lefts = [];
       		this.curr_index = 0;
       		this.creator_preview = $(".creator-preview");
-      
-			$("ul.creators-list").css("width", this.calcRiverWidth());
+
+			$("ul.gallery-list").css("width", this.calcRiverWidth());
 			this.setRiverLefts();
 			this.left_arrow.hide();
 		},
 		calcRiverWidth: function () {
 			var width = 0;
-			this.creators_list_items.each(function () {
+			this.gallery_list_items.each(function () {
 				width += $(this).outerWidth(true);
 			});
 			return width;
 		},
 		setRiverLefts: function () {
 			var container_width = $(".river-window").width(),
-				items_width = this.creators_list_items.filter(":first").outerWidth(true),
+				items_width = this.gallery_list_items.filter(":first").outerWidth(true),
 				numb_visbl_ele = Math.ceil(container_width / items_width),
-				numb_ele = this.creators_list_items.length,
+				numb_ele = this.gallery_list_items.length,
 				numb_pages = Math.ceil(numb_ele / numb_visbl_ele);
 				sum = 0,
 				that = this,
@@ -96,6 +96,6 @@ App.home.homeRiver = ({
 			else {
 				this.right_arrow.show();
 			}
-			this.creators_list.stop(true).animate({"margin-left": that.river_lefts[that.curr_index] + "px"}, 1000);
+			this.gallery_list.stop(true).animate({"margin-left": that.river_lefts[that.curr_index] + "px"}, 1000);
 		}
 });

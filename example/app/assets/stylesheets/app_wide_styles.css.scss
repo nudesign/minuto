@@ -142,7 +142,7 @@ p + p {
     padding-top: 0px;
   }
   .list-item-txt {
-    
+
   }
 }
 
@@ -195,7 +195,7 @@ p + p {
     height: 48px;
   }
   &.pw-absolute {
-    
+
   }
 }
 .paginator {
@@ -237,7 +237,7 @@ p + p {
   }
   &.left-arrow {
     background-color: #F2F2F2;
-    background: url('l-arrow.png') no-repeat center center rgba(0,0,0,0.5);
+    background: url('/images/l-arrow.png') no-repeat center center rgba(0,0,0,0.5);
     left: 0px;
     &.home-river {
       left: 2px;
@@ -247,7 +247,7 @@ p + p {
   }
   &.right-arrow {
     background-color: #F2F2F2;
-    background: url('r-arrow.png') no-repeat center center rgba(0,0,0,0.5);
+    background: url('/images/r-arrow.png') no-repeat center center rgba(0,0,0,0.5);
     right: 0px;
     &.home-river {
       right: 2px;
