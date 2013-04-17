@@ -306,10 +306,11 @@ var default_settings = {
 };
 
 $.fn.gallerize = function(method, options) {
-  options = options || {};
+  if (options !== 0 ) {
+      options = options || {};
+  }
   var id,
       settings;
-
 //CHECK IF GALLERY HAS ID
   if ($(this).length < 1) {
     if( (window['console'] !== undefined) ){
@@ -358,7 +359,7 @@ $.fn.gallerize = function(method, options) {
   }
 
   else if ( method === 'moveToSlide' ) {
-    if ( typeof options === "number" ) {
+    if ( typeof options === "number" || options) {
       return galleries[id].moveToSlide(options);
    }
     else {

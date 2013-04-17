@@ -38,20 +38,23 @@
   <script type="text/javascript" src="/javascripts/menu.js"></script>
   <script type="text/javascript" src="/javascripts/jquery-gallerize.js"></script>
   <script type="text/javascript">
-    var gallery = $(".gallery-list");
-    $(".gallery-list").gallerize({items: "li.gallery-item", paginator: false});
-    $("li.left-arrow").click(function () {
-      gallery.gallerize("moveLeft");
-    });
-    $("li.right-arrow").click(function () {
-      gallery.gallerize("moveRight");
-    });
-    $(".paginator-window").click(function(e) {
-      var index = $(e.target).parents("li").index();
-      e.preventDefault();
-      gallery.gallerize("moveToSlide", index);
-      gallery.gallerize("stopSlideShow");
-    });
+    (function ($, window){
+      var gallery = $(".gallery-list");
+      $(".gallery-list").gallerize({items: "li.gallery-item", paginator: false});
+      $("li.left-arrow").click(function () {
+        gallery.gallerize("moveLeft");
+      });
+      $("li.right-arrow").click(function () {
+        gallery.gallerize("moveRight");
+      });
+      $(".paginator-window").click(function(e) {
+        var index = parseInt($(e.target).parents("li").index(), 10);
+        console.log(typeof index)
+        e.preventDefault();
+        gallery.gallerize("moveToSlide", index);
+        gallery.gallerize("stopSlideShow");
+      });      
+    })(jQuery)
   </script>
   <script type="text/javascript" src="/javascripts/webfont.js"></script>
 
