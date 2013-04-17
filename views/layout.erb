@@ -42,7 +42,7 @@
       var gallery = $(".gallery-list"),
           cases = $(".case-images-river"),
           cases_children,
-          new_cases_width;
+          new_cases_width = 0;
       if (gallery.length > 0 ) {
               $(".gallery-list").gallerize({items: "li.gallery-item", paginator: false});
               $("li.left-arrow").click(function () {
@@ -61,14 +61,15 @@
       }
     if (cases.length > 0 ) {
       cases_children = cases.children();
-      console.log(cases_children)
       $(window).load(function() {
       cases_children.each(function() {
-        console.log($(this).outerWidth(true))
+        console.log(new_cases_width)
         new_cases_width += $(this).outerWidth(true);
+
       });
-      });
+      cases.width(new_cases_width + "px");
       console.log(new_cases_width)
+      });
     }     
     })(jQuery)
   </script>
