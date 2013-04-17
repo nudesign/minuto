@@ -84,6 +84,9 @@ p + p {
   margin-top: 8px;
   padding: 0 12px;
   width: 100%;
+  &.indented-title {
+    @include preffix(3, -12px);
+  }
 }
 
 .section-title {
@@ -174,15 +177,14 @@ p + p {
 
 /* COMPLEMENTO DA GALERIA */
 
-.gallery-frame {
+.media-frame {
   border: 0px solid $secondary-color;
   border-top-width: 1px;
   border-bottom-width: 1px;
   margin: 16px 0;
+  padding: 32px 0;
 }
-.wide-gallery {
-  padding: 16px 0 16px 200px;
-}
+
 
 
 /* MÓDULO — SETAS ---------------------------------------------------------- */
@@ -322,6 +324,10 @@ p + p {
   @include colunms(2);
 }
 
+.wide-gallery {
+  padding: 16px 0 16px 200px;
+}
+
 /* CASES */
 
 .gallery-window.case-images {
@@ -375,6 +381,25 @@ p + p {
   @include grid_father(12);
   @include preffix(3);
 }
+
+/* TECNOLOGIA */
+
+
+
+.tec-figure {
+  @include grid_father(15);
+  float: left;
+  .media-choice {
+    @include grid(9);
+    @include preffix(3);
+  }
+  .txt-ctn {
+    @include grid(3);
+  }
+}
+
+
+
 
 
 
