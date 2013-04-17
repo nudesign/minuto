@@ -134,7 +134,7 @@ p + p {
   float: left;
   height: 480px;
   position: relative;
-  width: 888px;
+  width: 720px;
 }
 .gallery-item {
   left: 0px;
@@ -143,35 +143,29 @@ p + p {
 }
 .gallery-image {
   max-height: 480px;
-  max-width: 888px;
+  max-width: 720px;
 }
 .paginator-window {
-  @include transition(all);
-  background-color: rgba(0,0,0,0.5);
   border-top: 1px solid #CCC;
   cursor: pointer;
   float: left;
-  height: 0px;
+  height: 48px;
+  margin-top: 16px;
   overflow: hidden;
-  padding: 4px 0px;
+  padding: 16px 0px 0px;
   width: 100%;
-  &:hover {
-    height: 48px;
-  }
-  &.pw-absolute {
-
-  }
 }
 .paginator {
   height: 48px;
-  margin-left: 48px;
+  margin-left: 240px;
   .paginator-item {
     display: inline;
     float: left;
   }
   img {
+    float: left;
     height: 48px;
-    margin-right: 4px;
+    margin-right: 16px;
   }
 }
 
@@ -324,11 +318,17 @@ p + p {
 
 .home-text-ctn {
   @include grid(10);
+  @include preffix(3);
   @include colunms(2);
+  margin-bottom: 16px;
 }
 
-.wide-gallery {
-  padding: 16px 0 16px 200px;
+.home-gallery {
+  @include grid_father(15);
+  padding: 16px 0;
+  .gallery-list {
+    left: 240px;
+  }
 }
 
 /* CASES */
@@ -386,8 +386,6 @@ p + p {
 }
 
 /* TECNOLOGIA */
-
-
 
 .tec-figure {
   @include grid_father(15);
