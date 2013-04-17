@@ -348,12 +348,20 @@ p + p {
   overflow-x: auto;
   overflow-y: hidden;
   width: 100%;
-  .gallery-river {
-    min-width: 3000px;
+  .case-images-river {
+    min-width: 5000px;
   }
-  .river-image {
+  .river-media-ctn {
     float: left;
     margin-right: 16px;
+  }
+  .river-image, .river-video {
+    display: block;
+  }
+  .river-caption {
+    margin-top: 16px;
+    @include title;
+    display: block;
   }
 }
 
