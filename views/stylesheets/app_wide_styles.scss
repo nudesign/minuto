@@ -261,6 +261,9 @@ p + p {
   @include big-title;
   margin-bottom: 0px;
   padding: 7px 4px 0px;
+  + p {
+    margin-top: 32px;
+  }
 }
 
 .title2 {
