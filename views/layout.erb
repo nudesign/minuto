@@ -53,7 +53,6 @@
               });
               $(".paginator-window").click(function(e) {
                 var index = parseInt($(e.target).parents("li").index(), 10);
-                console.log(typeof index)
                 e.preventDefault();
                 gallery.gallerize("moveToSlide", index);
                 gallery.gallerize("stopSlideShow");
@@ -63,12 +62,10 @@
       cases_children = cases.children();
       $(window).load(function() {
       cases_children.each(function() {
-        console.log(new_cases_width)
         new_cases_width += $(this).outerWidth(true);
 
       });
       cases.width(new_cases_width + "px");
-      console.log(new_cases_width)
       });
     }     
     })(jQuery)
