@@ -262,7 +262,7 @@ p + p {
 
 .title2 {
   @include mid-title;
-  
+
 }
 
 .title-border ~ .title-border {
@@ -352,7 +352,9 @@ p + p {
   }
   .river-media-ctn {
     float: left;
+    height: 448px;
     margin-right: 16px;
+    width: 322px;
   }
   .river-image, .river-video {
     display: block;

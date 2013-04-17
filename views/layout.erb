@@ -35,41 +35,8 @@
 
   <%= yield %>
 
-  <script type="text/javascript" src="/javascripts/menu.js"></script>
   <script type="text/javascript" src="/javascripts/jquery-gallerize.js"></script>
-  <script type="text/javascript">
-    (function ($){
-      var gallery = $(".gallery-list"),
-          cases = $(".case-images-river"),
-          cases_children,
-          new_cases_width = 0;
-      if (gallery.length > 0 ) {
-              $(".gallery-list").gallerize({items: "li.gallery-item", paginator: false});
-              $("li.left-arrow").click(function () {
-                gallery.gallerize("moveLeft");
-              });
-              $("li.right-arrow").click(function () {
-                gallery.gallerize("moveRight");
-              });
-              $(".paginator-window").click(function(e) {
-                var index = parseInt($(e.target).parents("li").index(), 10);
-                e.preventDefault();
-                gallery.gallerize("moveToSlide", index);
-                gallery.gallerize("stopSlideShow");
-              });  
-      }
-    if (cases.length > 0 ) {
-      cases_children = cases.children();
-      $(window).load(function() {
-      cases_children.each(function() {
-        new_cases_width += $(this).outerWidth(true);
-
-      });
-      cases.width(new_cases_width + "px");
-      });
-    }     
-    })(jQuery)
-  </script>
+  <script type="text/javascript" src="/javascripts/application.js"></script>
   <script type="text/javascript" src="/javascripts/webfont.js"></script>
 
   <% if development? %>
