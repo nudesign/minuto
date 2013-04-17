@@ -333,6 +333,13 @@ p + p {
 
 /* CASES */
 
+.case-text {
+  @include preffix(3);
+  .case-title-header {
+    margin-bottom: 32px;
+  }
+}
+
 .gallery-window.case-images {
   border: solid #000;
   border-width: 1px 0px;
@@ -355,6 +362,10 @@ p + p {
   margin-top: 32px;
   &.case-data {
     background-color: #CCC;
+    .txt-ctn {
+      @include grid(12);
+      padding: 22px 0 16px;
+    }
     h5 {
       @include mid-title;
       color: #FFF;
@@ -366,11 +377,17 @@ p + p {
     @include big-title;
     padding-top: 16px;
   }
-  .txt-ctn {
-    @include grid(12);
-    padding: 22px 0 16px;
-    .highlight-paragrafh {
-      @include mid-title;
+  &.case-metrics{
+    .txt-ctn {
+      @include grid(6);
+      padding: 22px 0 16px;
+      .highlight-paragrafh {
+        @include mid-title;
+        .notes {
+          font-size: 15px;
+          line-height: 16px;
+        }
+      }
     }
   }
 }
