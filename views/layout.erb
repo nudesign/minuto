@@ -46,6 +46,12 @@
     $("li.right-arrow").click(function () {
       gallery.gallerize("moveRight");
     });
+    $(".paginator-window").click(function(e) {
+      var index = $(e.target).parents("li").index();
+      e.preventDefault();
+      gallery.gallerize("moveToSlide", index);
+      gallery.gallerize("stopSlideShow");
+    });
   </script>
   <script type="text/javascript" src="/javascripts/webfont.js"></script>
 

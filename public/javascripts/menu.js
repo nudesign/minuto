@@ -1,4 +1,4 @@
-(function() {
+(function($) {
   var data_pages  = $('#master-menu').attr('data-pages'),
       split_names = data_pages.split(",");
 
