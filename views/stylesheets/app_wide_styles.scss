@@ -262,7 +262,7 @@ p + p {
 
 .title2 {
   @include mid-title;
-
+  text-transform: lowercase;
 }
 
 .title-border ~ .title-border {
@@ -327,7 +327,7 @@ p + p {
   @include grid_father(15);
   padding: 16px 0;
   .gallery-list {
-    left: 240px;
+    margin-left: 240px;
   }
 }
 
@@ -352,8 +352,7 @@ p + p {
     float: left;
     margin-right: 16px;
     img {
-      height: 447px;
-      width: 588px;
+      height: 448px;
     }
   }
   .river-image, .river-video {
@@ -363,6 +362,7 @@ p + p {
     margin-top: 16px;
     @include title;
     display: block;
+    width: 343px;
   }
 }
 
