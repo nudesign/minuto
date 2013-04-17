@@ -285,7 +285,7 @@ p + p {
 }
 
 .cases-list {
-  @include grid_father(12);
+  @include grid_father(15);
   .list-item {
     @include grid(5);
   }
@@ -392,6 +392,7 @@ p + p {
       padding: 22px 0 16px;
       .highlight-paragrafh {
         @include mid-title;
+        text-transform: lowercase;
         .notes {
           color: #666;
           display: block;
