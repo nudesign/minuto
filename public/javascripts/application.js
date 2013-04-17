@@ -43,9 +43,12 @@
   // Gallery equal in case page
   var _width = 0,
       _margin = 16;
-  $('.gallery-river .river-image').each(function( index, item ) {
-    _width += item.width + _margin;
+  $('.case-images-river figure object').each(function( index, item ) {
+    _width += Number(item.width) + _margin;
   });
-  $('.gallery-river').css("width", _width);
+  $('.case-images-river figure img').each(function( index, item ) {
+    _width += Number(item.width) + _margin;
+  });
+  $('.case-images-river').css("width", _width+10);
 
 })(jQuery);
