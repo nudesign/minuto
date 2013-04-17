@@ -392,8 +392,11 @@ p + p {
       .highlight-paragrafh {
         @include mid-title;
         .notes {
+          color: #666;
+          display: block;
           font-size: 15px;
           line-height: 16px;
+          margin-top: 8px;
         }
       }
     }
