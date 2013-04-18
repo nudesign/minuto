@@ -1,4 +1,4 @@
-(function ($, window){
+(function ($){
 
   // Menu
   var data_pages  = $('#master-menu').attr('data-pages'),
@@ -28,27 +28,28 @@
               gallery.gallerize("stopSlideShow");
             });
     }
-  if (cases.length > 0 ) {
-    cases_children = cases.children();
-    $(window).load(function() {
-    cases_children.each(function() {
-      new_cases_width += $(this).outerWidth(true);
+    //set case's river width
+    if (cases.length > 0 ) {
+      cases_children = cases.children();
+      $(window).load(function() {
+      cases_children.each(function() {
+        new_cases_width += $(this).outerWidth(true);
 
-    });
-    cases.width(new_cases_width + "px");
-    });
-  }
+      });
+      cases.width(new_cases_width + "px");
+      });
+    }
 
 
   // Gallery equal in case page
-  var _width = 0,
-      _margin = 16;
-  $('.case-images-river figure object').each(function( index, item ) {
-    _width += Number(item.width) + _margin;
-  });
-  $('.case-images-river figure img').each(function( index, item ) {
-    _width += Number(item.width) + _margin;
-  });
-  $('.case-images-river').css("width", _width+10);
+  // var _width = 0,
+  //     _margin = 16;
+  // $('.case-images-river figure object').each(function( index, item ) {
+  //   _width += Number(item.width) + _margin;
+  // });
+  // $('.case-images-river figure img').each(function( index, item ) {
+  //   _width += Number(item.width) + _margin;
+  // });
+  // $('.case-images-river').css("width", _width+10);
 
 })(jQuery);
