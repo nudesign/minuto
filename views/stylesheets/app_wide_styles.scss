@@ -308,6 +308,10 @@ p + p {
     float: left;
     margin-right: 16px;
     img {
+      @include transition(all);
+      height: 257px;
+    }
+    img:hover {
       height: 448px;
     }
   }
