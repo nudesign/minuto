@@ -247,7 +247,7 @@ p + p {
   z-index: 2;
 }
 
-/* ESTILOS PARA REPARAÇÃO POSTERIOR */
+/* ESTILOS PARA REPARAÇÃO POSTERIOR ----------------------------------------- */
 
 .title1 {
   @include title;
@@ -289,8 +289,14 @@ p + p {
   .list-item {
     @include grid(5);
   }
+  .list-image-wrapper {
+    height: 250px;
+    overflow: hidden;
+  }
   .list-item-header {
+    height: 144px;
     margin-top: 16px;
+    overflow: hidden;
   }
 }
 
