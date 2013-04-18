@@ -5,8 +5,6 @@ body {
   @include clearfix;
   @include text ($primary-color);
   @include basic;
-  min-height: 1000px;
-
 }
 
 a:link {
@@ -179,49 +177,6 @@ p + p {
   padding: 32px 0;
 }
 
-
-
-/* MÓDULO — SETAS ---------------------------------------------------------- */
-.arrow {
-  background-color: #F2F2F2;
-  background: rgba(0,0,0,0.5);
-  height: 100%;
-  opacity: 0.06;
-  position: absolute;
-  width: 48px;
-  z-index: 200;
-  &:hover {
-    cursor: pointer;
-    opacity: 1;
-  }
-  &.left-arrow {
-    background-color: #F2F2F2;
-    background: url('l-arrow.png') no-repeat center center rgba(0,0,0,0.5);
-    left: 0px;
-    &.home-river {
-      left: 2px;
-      height: 172px;
-      top: 62px;
-    }
-  }
-  &.right-arrow {
-    background-color: #F2F2F2;
-    background: url('r-arrow.png') no-repeat center center rgba(0,0,0,0.5);
-    right: 0px;
-    &.home-river {
-      right: 2px;
-      height: 172px;
-      top: 62px;
-    }
-  }
-}
-.paginator-window {
-  .arrow {
-    top: 0px;
-  }
-}
-/* -------------------------------------------------------------------------- */
-
 /* MÓDULO — LOADING ---------------------------------------------------------- */
 .loading {
   position: absolute;
@@ -237,17 +192,21 @@ p + p {
 
 /* TOOLTIP ------------------------------------------------------------------ */
 .tooltip {
+  @include grid(2.5);
   background-color: #F2F2F2;
   border: 1px solid #B3B3B3;
   display: none;
-  min-width: 176px;
   min-height: 96px;
   padding: 8px 4px;
   position: absolute;
   z-index: 2;
 }
 
-/* ESTILOS PARA REPARAÇÃO POSTERIOR ----------------------------------------- */
+/* ESTILOS DAS SEÇÕES ----------------------------------------- */
+
+.content-wrapper {
+  margin-top: 128px;
+}
 
 .title1 {
   @include title;
@@ -277,28 +236,12 @@ p + p {
   @include grid(6);
 }
 
-.video-list {
-  float: left;
-  .video-list-item {
-    float: left;
-  }
+.indented-index {
+  @include grid_father(12);
+  @include preffix(3);
 }
 
-.cases-list {
-  @include grid_father(15);
-  .list-item {
-    @include grid(5);
-  }
-  .list-image-wrapper {
-    height: 250px;
-    overflow: hidden;
-  }
-  .list-item-header {
-    height: 144px;
-    margin-top: 16px;
-    overflow: hidden;
-  }
-}
+/* CLIENTES */
 
 .clients-list {
   .list-item {
@@ -310,15 +253,6 @@ p + p {
   margin-bottom: 32px;
 }
 
-.about-us-list {
-  @include grid_father(12);
-  .media-ctn {
-    @include grid(8);
-  }
-  .txt-ctn {
-    @include grid(4);
-  }
-}
 
 /* HOME */
 
@@ -338,6 +272,22 @@ p + p {
 }
 
 /* CASES */
+
+.cases-list {
+  @include grid_father(15);
+  .list-item {
+    @include grid(5);
+  }
+  .list-image-wrapper {
+    height: 250px;
+    overflow: hidden;
+  }
+  .list-item-header {
+    height: 144px;
+    margin-top: 16px;
+    overflow: hidden;
+  }
+}
 
 .case-text {
   @include preffix(3);
@@ -416,10 +366,68 @@ p + p {
 
 /* QUEM SOMOS */
 
-.indented-index {
+.about-us-list {
   @include grid_father(12);
-  @include preffix(3);
+  .media-ctn {
+    @include grid(8);
+  }
+  .txt-ctn {
+    @include grid(4);
+  }
 }
+
+.video-list {
+  float: left;
+  .video-list-item {
+    float: left;
+  }
+}
+
+/* CONCURSO */
+
+.concurso-index {
+  margin-top: 8px;
+}
+.map-ctn {
+  position: relative;
+}
+
+.tooltip1-ctn:hover + .tooltip1 {
+  display: block;
+  top: 240px;
+  left: 38px;
+}
+.tooltip2-ctn:hover + .tooltip2 {
+  display: block;
+  top: 398px;
+  left: 140px;
+}
+.tooltip3-ctn:hover + .tooltip3 {
+  display: block;
+  top: 563px;
+  left: 140px;
+}
+.tooltip4-ctn:hover + .tooltip4 {
+  display: block;
+  top: 694px;
+  left: 140px;
+}
+.tooltip5-ctn:hover + .tooltip5 {
+  display: block;
+  top: 240px;
+  left: 222px;
+}
+.tooltip6-ctn:hover + .tooltip6 {
+  display: block;
+  bottom: 184px;
+  left: 262px;
+}
+.tooltip7-ctn:hover + .tooltip7 {
+  display: block;
+  bottom: 184px;
+  left: -4px;
+}
+
 
 /* TECNOLOGIA */
 
@@ -434,13 +442,6 @@ p + p {
     @include grid(3);
   }
 }
-
-
-
-
-
-
-
 
 
 

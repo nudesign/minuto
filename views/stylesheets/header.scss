@@ -1,10 +1,15 @@
 /* MAIN HEADER ----------------------------------------------------------- */
 
 .main-header {
+  position: fixed;
+  top: 0px;
+  background-color: #FFF;
+  height: 96px;
+  width: 100%;
+  z-index: 2;
 }
 
 .main-nav-container {
-  @include grid_father(15);
   height: 96px;
   margin-bottom: 32px;
 }
