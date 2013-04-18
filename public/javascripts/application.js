@@ -34,9 +34,8 @@
       $(window).load(function() {
       cases_children.each(function() {
         new_cases_width += $(this).outerWidth(true);
-
       });
-      cases.width(new_cases_width + "px");
+      cases.width(new_cases_width + 400 + "px");
       });
     }
 
